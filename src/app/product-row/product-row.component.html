@@ -1,0 +1,31 @@
+
+
+<hr/>
+ <div class="container">
+ <div class="col-sm-1"></div>
+    <div class="col-sm-4 vline" >
+    
+   <product-img
+ [product]="product">
+   </product-img>
+ </div>
+<div class="col-sm-5 ">
+ <div>
+ <div><h3>{{ product.name }}</h3></div> <br/><br/>
+ <div>SKU # {{ product.sku }}</div>
+ 
+ <div class="product-depart">
+ <product-depart
+ [product]="product">
+ </product-depart>
+ </div>
+ </div>
+</div>
+<div class="col-sm-2">
+<product-price 
+ [price]="product.price">
+ </product-price></div>
+ 
+ 
+ 
+ 
